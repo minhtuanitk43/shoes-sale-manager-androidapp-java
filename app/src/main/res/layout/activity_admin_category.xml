@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".GUI.Admin.AdminProductActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        style="@style/title_linearLayout">
+        <ImageView
+            android:id="@+id/imgBack"
+            style="@style/title_imageView_back"></ImageView>
+        <TextView
+            style="@style/title_textView"
+            android:text="@string/quan_ly_loai_san_pham"
+            ></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingRight="6dp"
+        >
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#BDBDBD"
+            android:textColor="@color/cardview_dark_background"
+            android:text="Thêm mới">
+        </Button>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewCategory"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</LinearLayout>

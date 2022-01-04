@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgProduct"
+                android:layout_width="fill_parent"
+                android:layout_height="133dp"
+                android:scaleType="centerInside"></ImageView>
+            <ImageView
+                android:id="@+id/imgDeal"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left"/>
+            <ImageView
+                android:id="@+id/imgFavourite"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:background="@drawable/heart"
+                android:backgroundTint="@color/nav_color"></ImageView>
+        </FrameLayout>
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:gravity="center|top"
+            android:text="Tên sản phẩm"
+            android:textSize="16dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvSoldOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="left"
+                android:textColor="@color/orange"
+                android:textSize="16dp"></TextView>
+            <TextView
+                android:id="@+id/tvProductPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="right"
+                android:text="200.000 đ"
+                android:textColor="@color/orange"
+                android:textSize="16dp"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
