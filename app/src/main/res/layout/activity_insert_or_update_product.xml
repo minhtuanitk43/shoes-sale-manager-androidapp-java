@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".GUI.Admin.InsertOrUpdateProductActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/orange"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_28"></ImageView>
+            <TextView
+                android:id="@+id/tv_title_insertProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/them_san_pham_moi"
+                android:textSize="20dp"
+                android:textColor="@color/white"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                style="@style/insert_row_linearLayout">
+                <TextView
+                    style="@style/insert_row_textView_name"
+                    android:text="Tên sp:">
+                </TextView>
+                <EditText
+                    android:id="@+id/edt_productName"
+                    style="@style/insert_row_editText_content"
+                    android:maxLength="90">
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/insert_row_linearLayout">
+                <TextView
+                    style="@style/insert_row_textView_name"
+                    android:text="Loại sp:">
+                </TextView>
+                <Spinner
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:id="@+id/spinner_category"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/insert_row_linearLayout">
+                <TextView
+                    style="@style/insert_row_textView_name"
+                    android:text="Mô tả ngắn:">
+                </TextView>
+                <EditText
+                    android:id="@+id/edt_productShortDes"
+                    style="@style/insert_row_editText_content"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:minLines="1"
+                    android:gravity="top|start"
+                    android:maxLines="5"
+                    android:scrollbars="vertical"
+                    android:text=""
+                    android:maxLength="200">
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/insert_row_linearLayout">
+                <TextView
+                    style="@style/insert_row_textView_name"
+                    android:text="Chi tiết sp:">
+                </TextView>
+                <EditText
+                    android:id="@+id/edt_productDescription"
+                    style="@style/insert_row_editText_content"
+                    android:inputType="textMultiLine"
+                    android:lines="10"
+                    android:minLines="1"
+                    android:gravity="top|start"
+                    android:maxLines="20"
+                   android:scrollbars="vertical">
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/insert_row_linearLayout">
+                <TextView
+                    style="@style/insert_row_textView_name"
+                    android:text="Giá bán:">
+                </TextView>
+                <EditText
+                    android:id="@+id/edt_productPrice"
+                    style="@style/insert_row_editText_content">
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/insert_row_linearLayout">
+                <TextView
+                    style="@style/insert_row_textView_name"
+                    android:text="Stock:">
+                </TextView>
+                <EditText
+                    android:id="@+id/edt_productStock"
+                    style="@style/insert_row_editText_content">
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/insert_row_linearLayout">
+                <TextView
+                    style="@style/insert_row_textView_name"
+                    android:text="Size:">
+                </TextView>
+                <EditText
+                    android:id="@+id/edt_productSizes"
+                    style="@style/insert_row_editText_content">
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/insert_row_linearLayout">
+                <TextView
+                    style="@style/insert_row_textView_name"
+                    android:text="Status:">
+                </TextView>
+                <Spinner
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:id="@+id/spinner_status"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                style="@style/insert_row_linearLayout">
+                <TextView
+                    style="@style/insert_row_textView_name"
+                    android:text="Hình sp:">
+                </TextView>
+                <ImageView
+                    style="@style/img_product"
+                    android:id="@+id/imgImage1" />
+                <ImageView
+                    style="@style/img_product"
+                    android:id="@+id/imgImage2" />
+                <ImageView
+                    style="@style/img_product"
+                    android:id="@+id/imgImage3" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/insert_row_linearLayout">
+                <TextView
+                    style="@style/insert_row_textView_name"
+                    android:textStyle="italic"
+                    android:text="(Hình đầu tiên sẽ là hình đại diện sản phẩm)">
+                </TextView>
+                <ImageView
+                    style="@style/img_product"
+                    android:id="@+id/imgImage4" />
+                <ImageView
+                    style="@style/img_product"
+                    android:id="@+id/imgImage5" />
+                <ImageView
+                    style="@style/img_product"
+                    android:id="@+id/imgImage6" />
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/insert_row_linearLayout"
+                android:gravity="right">
+                <Button
+                    android:id="@+id/btn_resetImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chọn lại"
+                    android:layout_gravity="right"
+                    android:drawableRight="@drawable/ic_baseline_image_24"
+                    android:backgroundTint="#7C7D7E">
+                </Button>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:gravity="right"
+                style="@style/insert_row_linearLayout">
+                <Button
+                    android:id="@+id/btn_insertOrUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Thêm mới">
+                </Button>
+                <Button
+                    android:id="@+id/btn_refresh"
+                    android:layout_width="wrap_content"
+                    android:text="Nhập lại"
+                    android:layout_height="wrap_content">
+                </Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

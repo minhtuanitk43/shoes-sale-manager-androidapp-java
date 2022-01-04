@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".GUI.Common.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/orange"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_28"></ImageView>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng ký tài khoản"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout style="@style/insert_row_linearLayout">
+
+                <TextView
+                    style="@style/insert_row_textView_name"
+                    android:text="UserName:"></TextView>
+
+                <EditText
+                    app:backgroundTint="@color/orange"
+                    android:id="@+id/edtUserName"
+                    style="@style/insert_row_editText_content"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/insert_row_linearLayout">
+
+                <TextView
+                    style="@style/insert_row_textView_name"
+                    android:text="Mật khẩu:"/>
+
+                <EditText
+                    app:backgroundTint="@color/orange"
+                    android:id="@+id/edtPassword"
+                    android:password="true"
+                    style="@style/insert_row_editText_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/insert_row_linearLayout">
+
+                <TextView
+                    style="@style/insert_row_textView_name"
+                    android:text="Nhập lại mật khẩu:"></TextView>
+
+                <EditText
+                    app:backgroundTint="@color/orange"
+                    android:id="@+id/edtPasswordAgain"
+                    android:password="true"
+                    style="@style/insert_row_editText_content"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/insert_row_linearLayout">
+
+                <TextView
+                    style="@style/insert_row_textView_name"
+                    android:text="Họ tên:"></TextView>
+
+                <EditText
+                    android:id="@+id/edtFullName"
+                    app:backgroundTint="@color/orange"
+                    style="@style/insert_row_editText_content"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/insert_row_linearLayout">
+
+                <TextView
+                    style="@style/insert_row_textView_name"
+                    android:text="Điện thoại:"></TextView>
+
+                <EditText
+                    app:backgroundTint="@color/orange"
+                    android:id="@+id/edtPhone"
+                    style="@style/insert_row_editText_content"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/insert_row_linearLayout">
+
+                <TextView
+                    style="@style/insert_row_textView_name"
+                    android:text="Địa chỉ:"></TextView>
+
+                <EditText
+                    app:backgroundTint="@color/orange"
+                    android:id="@+id/edtAddress"
+                    style="@style/insert_row_editText_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/insert_row_linearLayout"
+                android:layout_marginTop="20dp"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:backgroundTint="@color/orange"
+                    android:text="Đăng ký"></Button>
+
+                <Button
+                    android:id="@+id/btnRefresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/orange"
+                    android:text="Nhập lại"></Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

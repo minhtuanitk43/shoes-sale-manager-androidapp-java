@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GUI.Admin.AdminUserActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        style="@style/title_linearLayout">
+        <ImageView
+            android:id="@+id/imgBack"
+            style="@style/title_imageView_back"></ImageView>
+        <TextView
+            style="@style/title_textView"
+            android:text="@string/quan_ly_thanh_vien"
+            ></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="6dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginRight="5dp"
+            android:drawableRight="@drawable/ic_baseline_filter_alt_24" />
+        <Spinner
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:id="@+id/spinnerSort"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_marginLeft="5dp"
+            android:id="@+id/btnInsert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#BDBDBD"
+            android:textColor="@color/cardview_dark_background"
+            android:text="Thêm mới">
+        </Button>
+    </LinearLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="35dp"
+        android:elevation="10dp">
+
+        <EditText
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_edittext"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Tìm kiếm theo tên"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light"></EditText>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewUser"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</LinearLayout>

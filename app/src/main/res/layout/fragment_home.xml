@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".GUI.Admin.InsertOrUpdateProductActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EBEBEC"
+        android:orientation="vertical"
+        tools:context=".GUI.Common.MainActivity">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orange">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="35dp"
+                android:elevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:id="@+id/edtSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/login_edittext"
+                        android:drawableLeft="@drawable/ic_baseline_search_24"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:hint="Nhập từ khóa tìm kiếm"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/light"></EditText>
+
+                </LinearLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_height="180dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imgVisibleSlide"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|bottom"
+                android:src="@drawable/ic_baseline_keyboard_arrow_up_24"></ImageView>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvNewEst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Mới nhất"></TextView>
+
+                <View
+                    android:layout_width="2px"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray"></View>
+
+                <TextView
+                    android:id="@+id/tvAdidas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Adidas"></TextView>
+
+                <View
+                    android:layout_width="2px"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray"></View>
+
+                <TextView
+                    android:id="@+id/tvNike"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Nike"></TextView>
+
+                <View
+                    android:layout_width="2px"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray"></View>
+
+                <TextView
+                    android:id="@+id/tvPuma"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Puma"></TextView>
+
+                <View
+                    android:layout_width="2px"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray"></View>
+
+                <TextView
+                    android:id="@+id/tvReebok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Reebok"></TextView>
+
+                <View
+                    android:layout_width="2px"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray"></View>
+
+                <TextView
+                    android:id="@+id/tvAsics"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Asics"></TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2px"
+                android:background="@color/gray"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/lnlCategory1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lnlCategory2"
+                        android:paddingTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvAllProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="3dp"
+                        android:gravity="center"
+                        android:background="@drawable/cusstomborder"
+                        android:text="Tất cả"></TextView>
+                    <TextView
+                        android:id="@+id/tvPriceUpDown"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:background="@drawable/cusstomborder"
+                        android:drawableRight="@drawable/price_up_down"
+                        android:text="Giá"></TextView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/gridViewProduct"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:gravity="center"
+                android:horizontalSpacing="7dp"
+                android:listSelector="#00000000"
+                android:numColumns="2"
+                android:padding="5dp"
+                android:scrollbars="vertical"
+                android:verticalSpacing="10dp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvNotLogin"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Bạn chưa đăng nhập"
+            android:textSize="20dp"></TextView>
+    </LinearLayout>
+</FrameLayout>

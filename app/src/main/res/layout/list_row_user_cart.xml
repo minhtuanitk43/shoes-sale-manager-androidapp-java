@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_margin="5dp"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvProductName"
+            android:text="Tên sp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Giá:"></TextView>
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:paddingLeft="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/orange"
+                android:layout_width="match_parent"
+                android:text="4000.000 đ"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Size:"></TextView>
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvSize"
+                android:paddingLeft="10dp"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:text="40"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Số lượng:"></TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgQuantityDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_baseline_arrow_left_24"/>
+
+                <TextView
+                    android:id="@+id/tvQuantity"
+                    android:textSize="16dp"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="100" />
+
+                <ImageView
+                    android:id="@+id/imgQuantityUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_baseline_arrow_right_24"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_baseline_close_24"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
